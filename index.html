@@ -1,44 +1,112 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Hackdays@N</title>
+        <title>Hackdays@N</title>
 
-		<link rel="stylesheet" href="revealjs/dist/reset.css">
-		<link rel="stylesheet" href="revealjs/dist/reveal.css">
-		<link rel="stylesheet" href="revealjs/dist/theme/black.css">
+        <link rel="stylesheet" href="revealjs/dist/reset.css">
+        <link rel="stylesheet" href="revealjs/dist/reveal.css">
+        <link rel="stylesheet" href="revealjs/dist/theme/black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="timeline.css">
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
+            <style>  
+                .about-card{
+                    box-shadow: 0 4px 8px 0 grey;
+                    padding: 20px;
+                    margin: 10px;
+                }
+                li:before{
+                    content: "\2713 ";
+                }
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-                    <h3>DataChallenge & Hackdays @ N</h3>
+            </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
 
+                    <h2 class="r-fit-text">DataChallenge &</h2>
+                    <h2 class="r-fit-text">Hackdays & N</h2>
+
+                    <div style="background-color: rgba(242, 188, 107,0.6)">(click <i class="fas fa-caret-right"></i> for more information)</div>
+
+                </section>
+                <section>
+                    <h3>What is this about?</h3><br> <br> 
+                    
+                    <div style="font-size:smaller">
+                    The Research Group for Geoinformatics is organising a DataChallange and subsequent Hackdays especially for Lifescience Bachelor and Master Students at ZHAW who are interested of honing their datascience skills on a fun, small project. 
+                    </div> 
+                </section>
+                <section>
+
+                    <h3>How does it work?</h3>
+
+                    <small> 
+                        <div class="about-card fragment fade-in-then-semi-out"> 
+                        We provide you with an interesting dataset. You use your coding skills (beginners welcome!) to do an exploratory analysis and come up with an idea on what you want to further explore with this data.
+                        </div> 
+                        <div class="about-card fragment fade-in-then-semi-out"> 
+                        This could be answering specific research questions, creating a cool visualiation or something else. You submit this idea individually or in teams by 9<sup>th</sup> June 2022 thus taking part in the <em>DataChallange</em>
+                        </div> 
+
+                        <div class="about-card fragment fade-in-then-semi-out"> 
+                        You will pitch your idea on the 10<sup>th</sup> of June and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like minded participants.
+
+                        </div> 
+                        <div class="about-card fragment fade-in-then-semi-out"> 
+                        You or your team will work on this idea during the <em>Hack Days</em> on the 20<sup>th</sup>, 21<sup>st</sup> and 22<sup>nd</sup> June 2023. After completion and submition we will vote on the best implementation, thus anointing <em> the winner of the 2022 Hackdays@N </em> 
+                                                
+                        </div> 
+                    </small> 
+                </section>
+                <section>
+                    <h3>What you will gain</h3>
+
+                    <ul style="list-style: none; ">
+                        <li>Sharpen your datascience skills</li>
+                        <li>Learn state-of-the-art collaboration via git</li>
+                        <li>Participation in a friedly competition</li>
+                        <li>Playfully earn 1 ETCS<sup>1</sup> </li>
+                    </ul>
+                    
+                    <div style="padding-top: 40px; font-size: x-small; bottom: 0px; right: 0px"> <sup>1</sup>This exlcludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div>  
+                </section>
+                <section>
+                    <h3> interested? </h3> 
+
+                    Register to this event via <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md">this link </a> <br> <br> 
+
+                    <small> Registration is non-binding and requires registering for a github account. </small> <br> <br> 
+                    <small>Question can be directed @ <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a> </small>
 
 
                 </section>
-			</div>
-		</div>
+                <section data-background-image="Technology-Background-HD-Image.jpg">
+                    <h3>Looking forward to seeing you!</h3>
+                </section>
+            </div>
+        </div>
 
-		<script src="revealjs/dist/reveal.js"></script>
-		<script src="revealjs/plugin/notes/notes.js"></script>
-		<script src="revealjs/plugin/markdown/markdown.js"></script>
-		<script src="revealjs/plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <script src="revealjs/dist/reveal.js"></script>
+        <script src="revealjs/plugin/notes/notes.js"></script>
+        <script src="revealjs/plugin/markdown/markdown.js"></script>
+        <script src="revealjs/plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
 </html>
