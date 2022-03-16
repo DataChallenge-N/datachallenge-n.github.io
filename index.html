@@ -19,7 +19,7 @@
                 padding: 20px;
                 margin: 10px;
             }
-            li:before{
+            .li-gain li:before{
                 content: "\2713 ";
             }
             .reveal  {
@@ -27,6 +27,7 @@
                 background-size: 15%;
                 background-repeat: no-repeat;
                 background-position: top left;
+                z-index: 9999
             }
         </style>
     </head>
@@ -36,10 +37,11 @@
                 <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
 
                     <h2 class="r-fit-text">DataChallenge &</h2>
-                    <h2 class="r-fit-text">Hackdays & N</h2>
-
-                    <div style="background-color: rgba(242, 188, 107,0.6)">(click <i class="fas fa-caret-right"></i> for more information)</div>
-
+                    <div style="display: grid; grid-template-columns: 60% 30%;"> 
+                        <div>  <h2 class="r-fit-text">Hackdays</h2></div> 
+                    <div> <img src="zhaw_lsfm_negativ.png" style="margin: 0px;"> </img> </div> 
+                    </div> 
+                    <div style="background-color: rgba(242, 188, 107,0.6); width: 100%; padding: 10px; border-radius:20px">(click <i class="fas fa-caret-right"></i> for more information)</div>
                 </section>
                 <section>
                     <h3>What is this about?</h3><br> <br> 
@@ -73,14 +75,14 @@
                 <section>
                     <h3>What you will gain</h3>
 
-                    <ul style="list-style: none; ">
+                    <ul style="list-style: none;" class="li-gain">
                         <li>Sharpen your datascience skills</li>
                         <li>Learn state-of-the-art collaboration via git</li>
-                        <li>Participation in a friedly competition</li>
-                        <li>Playfully earn 1 ETCS<sup>1</sup> </li>
+                        <li>Participate in a friedly competition</li>
+                        <li>Earn 1 ETCS playfully<sup>1</sup> </li>
                     </ul>
 
-                    <div style="padding-top: 40px; font-size: x-small; bottom: 0px; right: 0px"> <sup>1</sup>This exlcludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div>  
+                    <div style="padding-top: 40px; font-size: small; bottom: 0px; right: 0px; text-align: right"> <sup>1</sup>This excludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div>  
                 </section>
                 <section>
                     <h3> interested? </h3> 
