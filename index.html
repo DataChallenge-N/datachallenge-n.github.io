@@ -64,7 +64,7 @@
                     <h3>What is this about?</h3><br> <br> 
 
                     <div style="font-size:smaller">
-                        The <a href="https://www.zhaw.ch/de/lsfm/institute-zentren/iunr/geooekologie/geoinformatik/"> Research Group for Geoinformatics</a>  is organizing a DataChallange and subsequent hackdays in perticular for bachelor and master students at ZHAW LSFM who are interested of honing their datascience skills on a fun, small project. 
+                        The <a href="https://www.zhaw.ch/de/lsfm/institute-zentren/iunr/geooekologie/geoinformatik/"> Research Group for Geoinformatics</a>  is organizing a DataChallange and subsequent hackdays in particular for BSc and MSc students at ZHAW LSFM who are interested of improving their datascience skills on a fun, small project. 
                     </div> 
                 </section>
                 <section>
@@ -75,24 +75,24 @@
                         <div>29<sup>th</sup> May 2022</div>
                         <div class="about-card"> 
                             We provide you with an interesting dataset. You use your coding skills to do an exploratory analysis and come up with an idea on what you want to further explore with this data. 
-                            This could be answering specific research questions, creating a cool visualiation or something else. 
+                            This could be answering specific research questions, creating a cool visualization or something else. 
                         </div> 
                     </div> 
                     <div class="row fragment fade-in-then-semi-out " > 
-                        <div>9<sup>th</sup> May 2022 </div>
+                        <div>10<sup>th</sup> June 2022 </div>
                         <div class="about-card"> 
-                            You submit this idea individually or in teams by 9<sup>th</sup> June 2022 thus taking part in the <em>DataChallange</em>
-
+                            You submit this idea individually or in teams, thus taking part in the <em>DataChallange</em>
                         </div> 
                     </div> 
 
                     <div class="row fragment fade-in-then-semi-out " > 
                         <div>20<sup>th</sup>-22<sup>nd</sup> June 2023 </div>
                         <div class="about-card"> 
-                            You will pitch your idea on and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like minded participants.
+                            You will pitch your idea on and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like-minded participants.
+
                             You or your team will work on this idea during the <em>Hack Days</em>. <br> <br> 
 
-                            After completion and submition we will vote on the best implementation, thus anointing <em> the winner of the 2022 Hackdays@N </em> 
+                            After completion and submission we will vote on the best implementation, thus announcing <em> the winner of the 2022 Hackdays@N </em> 
 
                         </div> 
                     </div> 
@@ -101,26 +101,28 @@
                     <h3>What you will gain</h3>
 
                     <ul class="li-gain">
-                        <li>Sharpen your datascience skills</li>
-                        <li>Learn state-of-the-art collaboration via git</li>
-                        <li>Participate in a friedly competition</li>
-                        <li>Earn 1 ETCS playfully<sup>1</sup> </li>
+                        <li>Sharpen your datascience skills </li>
+                        <li>Learn state-of-the-art collaboration </li>
+                        <li>Participate in a friendly competition </li>
+                        <li>Earn 1 ETCS playfully <!-- <sup>1</sup> </li> --> 
                     </ul>
 
-                    <div style="padding-top: 40px; font-size: small; bottom: 0px; right: 0px; text-align: right"> <sup>1</sup>This excludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div>  
+                    <!-- <div style="padding-top: 40px; font-size: small; bottom: 0px; right: 0px; text-align: right"> <sup>1</sup>This excludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div> -->  
                 </section>
                 <section>
-                    <h3> interested? </h3> 
 
-                    Register to this event via <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md">this link </a> <br> <br> 
+                    <p class="r-fit-text"> If you are interested in joining this this event, tell us here: </p> <br> <br>
 
-                    <small> Registration is non-binding and requires registering for a github account. </small> <br> <br> 
-                    <small>Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a> </small>
+                    <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md" target="_blank">click me</a> <br> <br> 
+
+                    <small>(Registration is non-binding and requires registering for a github account. Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a>) </small>
 
 
                 </section>
                 <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
-                    <h3>We are looking forward to seeing you!</h3>
+                    <p>We are looking forward to seeing you!</p>
+
+                    <i class="fa-solid fa-heart fa-2x"></i>
                 </section>
             </div>
         </div>
@@ -129,17 +131,22 @@
         <script src="revealjs/plugin/notes/notes.js"></script>
         <script src="revealjs/plugin/markdown/markdown.js"></script>
         <script src="revealjs/plugin/highlight/highlight.js"></script>
+        <script src="revealjs/plugin/helpbutton/helpbutton.js"></script>
         <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
             // - https://revealjs.com/config/
             Reveal.initialize({
-                hash: true,
+                hash: false,
                 transition: 'convex',
                 loop: true,
+                autoSlide: 5000,
                 // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, HelpButton ],
+                helpButtonDisplay: 'always',
+
             });
         </script>
     </body>
 </html>
+
