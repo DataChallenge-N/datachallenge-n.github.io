@@ -18,9 +18,13 @@
                 box-shadow: 0 4px 8px 0 grey;
                 padding: 20px;
                 margin: 10px;
+                vertical-align: middle;
             }
-            .li-gain li:before{
-                content: "\2713 ";
+            .li-gain{
+                list-style: none; 
+            }
+            .li-gain li:after{
+                content: "\2713";
             }
             .reveal  {
                 background-image: url(../../zhaw_lsfm_negativ.png);
@@ -28,6 +32,20 @@
                 background-repeat: no-repeat;
                 background-position: top left;
                 z-index: 9999
+            }
+            .dot {
+                top: 50%
+            }
+            .dot:after {
+                content: "  ●";
+            }
+            .row{
+                font-size: small; 
+                display:grid;
+                grid-template-columns: 20% 80%;
+                padding: 10px;
+                align-items: center;
+                text-align: left
             }
         </style>
     </head>
@@ -39,9 +57,8 @@
                     <h2 class="r-fit-text">DataChallenge &</h2>
                     <div style="display: grid; grid-template-columns: 60% 30%;"> 
                         <div>  <h2 class="r-fit-text">Hackdays</h2></div> 
-                    <div> <img src="zhaw_lsfm_negativ.png" style="margin: 0px;"> </img> </div> 
+                        <div> <img src="zhaw_lsfm_negativ.png" style="margin: 0px;"> </img> </div> 
                     </div> 
-                    <div style="background-color: rgba(242, 188, 107,0.6); width: 100%; padding: 10px; border-radius:20px">(click <i class="fas fa-caret-right"></i> for more information)</div>
                 </section>
                 <section>
                     <h3>What is this about?</h3><br> <br> 
@@ -54,28 +71,36 @@
 
                     <h3>How does it work?</h3>
 
-                    <small> 
-                        <div class="about-card fragment fade-in-then-semi-out"> 
-                            We provide you with an interesting dataset. You use your coding skills (beginners welcome!) to do an exploratory analysis and come up with an idea on what you want to further explore with this data.
+                    <div class="row fragment fade-in-then-semi-out " > 
+                        <div>29<sup>th</sup> May 2022</div>
+                        <div class="about-card"> 
+                            We provide you with an interesting dataset. You use your coding skills to do an exploratory analysis and come up with an idea on what you want to further explore with this data. 
+                            This could be answering specific research questions, creating a cool visualiation or something else. 
                         </div> 
-                        <div class="about-card fragment fade-in-then-semi-out"> 
-                            This could be answering specific research questions, creating a cool visualiation or something else. You submit this idea individually or in teams by 9<sup>th</sup> June 2022 thus taking part in the <em>DataChallange</em>
-                        </div> 
-
-                        <div class="about-card fragment fade-in-then-semi-out"> 
-                            You will pitch your idea on the 10<sup>th</sup> of June and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like minded participants.
-
-                        </div> 
-                        <div class="about-card fragment fade-in-then-semi-out"> 
-                            You or your team will work on this idea during the <em>Hack Days</em> on the 20<sup>th</sup>, 21<sup>st</sup> and 22<sup>nd</sup> June 2023. After completion and submition we will vote on the best implementation, thus anointing <em> the winner of the 2022 Hackdays@N </em> 
+                    </div> 
+                    <div class="row fragment fade-in-then-semi-out " > 
+                        <div>9<sup>th</sup> May 2022 </div>
+                        <div class="about-card"> 
+                            You submit this idea individually or in teams by 9<sup>th</sup> June 2022 thus taking part in the <em>DataChallange</em>
 
                         </div> 
-                    </small> 
+                    </div> 
+
+                    <div class="row fragment fade-in-then-semi-out " > 
+                        <div>20<sup>th</sup>-22<sup>nd</sup> June 2023 </div>
+                        <div class="about-card"> 
+                            You will pitch your idea on and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like minded participants.
+                            You or your team will work on this idea during the <em>Hack Days</em>. <br> <br> 
+
+                            After completion and submition we will vote on the best implementation, thus anointing <em> the winner of the 2022 Hackdays@N </em> 
+
+                        </div> 
+                    </div> 
                 </section>
                 <section>
                     <h3>What you will gain</h3>
 
-                    <ul style="list-style: none;" class="li-gain">
+                    <ul class="li-gain">
                         <li>Sharpen your datascience skills</li>
                         <li>Learn state-of-the-art collaboration via git</li>
                         <li>Participate in a friedly competition</li>
@@ -90,12 +115,12 @@
                     Register to this event via <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md">this link </a> <br> <br> 
 
                     <small> Registration is non-binding and requires registering for a github account. </small> <br> <br> 
-                    <small>Question can be directed @ <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a> </small>
+                    <small>Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a> </small>
 
 
                 </section>
-                <section data-background-image="Technology-Background-HD-Image.jpg">
-                    <h3>Looking forward to seeing you!</h3>
+                <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
+                    <h3>We are looking forward to seeing you!</h3>
                 </section>
             </div>
         </div>
@@ -109,8 +134,9 @@
             // - https://revealjs.com/initialization/
             // - https://revealjs.com/config/
             Reveal.initialize({
-                hash: false,
+                hash: true,
                 transition: 'convex',
+                loop: true,
                 // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
             });
