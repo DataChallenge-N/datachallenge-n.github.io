@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="revealjs/dist/reveal.css">
         <link rel="stylesheet" href="revealjs/dist/theme/black.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="stylesheet" href="timeline.css">
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
         <style>  
@@ -67,7 +66,7 @@
                         The <a href="https://www.zhaw.ch/de/lsfm/institute-zentren/iunr/geooekologie/geoinformatik/"> Research Group for Geoinformatics</a>  is organizing a DataChallange and subsequent hackdays in particular for BSc and MSc students at ZHAW LSFM who are interested of improving their datascience skills on a fun, small project. 
                     </div> 
                 </section>
-                <section>
+                <section data-autoslide="3000">
 
                     <h3>How does it work?</h3>
 
@@ -92,9 +91,17 @@
 
                             You or your team will work on this idea during the <em>Hack Days</em>. <br> <br> 
 
-                            After completion and submission we will vote on the best implementation, thus announcing <em> the winner of the 2022 Hackdays@N </em> 
 
                         </div> 
+                    </div> 
+
+                    <div class="row fragment fade-in-then-semi-out " > 
+                        <div>22<sup>nd</sup> June 2023 </div>
+                        <div class="about-card"> 
+
+                            After completion and submission we will vote on the best implementation, thus announcing <em> the winner of the 2022 Hackdays@N </em> 
+                        </div> 
+
                     </div> 
                 </section>
                 <section>
@@ -113,16 +120,23 @@
 
                     <p class="r-fit-text"> If you are interested in joining this this event, tell us here: </p> <br> <br>
 
-                    <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md" target="_blank">click me</a> <br> <br> 
+                    <a href="https://github.com/DataChallenge-N/FS22/issues/new?labels=&template=registration.md" target="_blank"><i class="fa-solid fa-dove"></i> click me <i class="fa-solid fa-dove fa-flip-horizontal"> </i>  </a> <br> <br> 
 
-                    <small>(Registration is non-binding and requires registering for a github account. Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a>) </small>
+                    <div id="countdown" style="display:grid; grid-template-columns: auto auto auto auto ">
+                        <div><div id="days"></div>DAYS</div>
+                        <div><div id="hours"></div>HOURS</div>
+                        <div><div id="minutes"></div>MINUTES</div>
+                        <div><div id="seconds"></div>SECONDS</div>
+                    </div>
 
-
+                    <div class="footnote" style="font-size: small;">(Registration is non-binding and requires registering for a github account. Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a>) </div>
                 </section>
                 <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
-                    <p>We are looking forward to seeing you!</p>
+                    <p class="r-fit-text">We are looking forward to seeing you!</p>
 
-                    <i class="fa-solid fa-heart fa-2x"></i>
+                    <i class="fa-solid fa-heart fa-2x"></i> <br> <br> 
+
+                    <div class="r-fit-text"> PS: you can navigate through the slides using your (left and right) keyboard arrows <div> 
                 </section>
             </div>
         </div>
@@ -132,6 +146,7 @@
         <script src="revealjs/plugin/markdown/markdown.js"></script>
         <script src="revealjs/plugin/highlight/highlight.js"></script>
         <script src="revealjs/plugin/helpbutton/helpbutton.js"></script>
+        <script src="timer.js"></script>
         <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
