@@ -58,6 +58,12 @@
                         <div>  <h2 class="r-fit-text">Hackdays</h2></div> 
                         <div> <img src="zhaw_lsfm_negativ.png" style="margin: 0px;"> </img> </div> 
                     </div> 
+                    <div id="countdown" style="display:grid; grid-template-columns: auto auto auto auto ">
+                        <div><div id="days"></div>DAYS</div>
+                        <div><div id="hours"></div>HOURS</div>
+                        <div><div id="minutes"></div>MINUTES</div>
+                        <div><div id="seconds"></div>SECONDS</div>
+                    </div>
                 </section>
                 <section>
                     <h3>What is this about?</h3><br> <br> 
@@ -66,15 +72,22 @@
                         The <a href="https://www.zhaw.ch/de/lsfm/institute-zentren/iunr/geooekologie/geoinformatik/"> Research Group for Geoinformatics</a>  is organizing a DataChallange and subsequent hackdays in particular for BSc and MSc students at ZHAW LSFM who are interested of improving their datascience skills on a fun, small project. 
                     </div> 
                 </section>
-                <section data-autoslide="3000">
+                <section id = "info" data-autoslide="3000">
 
                     <h3>How does it work?</h3>
 
                     <div class="row fragment fade-in-then-semi-out " > 
-                        <div>29<sup>th</sup> May 2022</div>
+                        <div>29<sup>th</sup> April 2022</div>
                         <div class="about-card"> 
                             We provide you with an interesting dataset. You use your coding skills to do an exploratory analysis and come up with an idea on what you want to further explore with this data. 
-                            This could be answering specific research questions, creating a cool visualization or something else. 
+                            <!--This could be answering specific research questions, creating a cool visualization or something else. -->
+                        </div> 
+                    </div> 
+                    <div class="row fragment fade-in-then-semi-out " > 
+                        <div>13<sup>th</sup> Mai 2022</div>
+                        <div class="about-card"> 
+                            Registration Deadline
+                            
                         </div> 
                     </div> 
                     <div class="row fragment fade-in-then-semi-out " > 
@@ -85,13 +98,11 @@
                     </div> 
 
                     <div class="row fragment fade-in-then-semi-out " > 
-                        <div>20<sup>th</sup>-22<sup>nd</sup> June 2023 </div>
+                        <div>20<sup>th</sup>-22<sup>nd</sup> June 2022 </div>
                         <div class="about-card"> 
                             You will pitch your idea on and listen to ideas presented by your fellow students after which you can either continue to work on your own idea or form teams with like-minded participants.
 
-                            You or your team will work on this idea during the <em>Hack Days</em>. <br> <br> 
-
-
+                            You or your team will work on this idea during the <em>Hack Days</em>.
                         </div> 
                     </div> 
 
@@ -116,20 +127,15 @@
 
                     <!-- <div style="padding-top: 40px; font-size: small; bottom: 0px; right: 0px; text-align: right"> <sup>1</sup>This excludes participants of the FS2022 Course <em>Computational Movement Analysis</em> / <em>Patterns & Trends in Environmental Data</em> </div> -->  
                 </section>
-                <section>
+                <section id="register">
 
-                    <p class="r-fit-text"> If you are interested in joining this this event, tell us here: </p> <br> <br>
+                    <p class="r-fit-text"> If you are interested in joining this this event, tell us here : </p> 
+                    <br> <br>
 
                     <a href="https://github.com/DataChallenge-N/FS22/issues/new?assignees=ratnanil&labels=contact-form&template=contact-form.yml&title=I%27m+interested+in+participating%21" target="_blank"><i class="fa-solid fa-dove"></i> click me <i class="fa-solid fa-dove fa-flip-horizontal"> </i>  </a> <br> <br> 
+                                     
 
-                    <div id="countdown" style="display:grid; grid-template-columns: auto auto auto auto ">
-                        <div><div id="days"></div>DAYS</div>
-                        <div><div id="hours"></div>HOURS</div>
-                        <div><div id="minutes"></div>MINUTES</div>
-                        <div><div id="seconds"></div>SECONDS</div>
-                    </div>
-
-                    <div class="footnote" style="font-size: small;">(Registration is non-binding and requires registering for a github account. Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a>) </div>
+                    <div class="footnote" style="font-size: small;">(Deadline: 13<sup>th</sup> Mai 2022. Registration is non-binding and requires registering for a github account. Questions can be directed to <a href="https://www.zhaw.ch/en/about-us/person/rata/">Nils Ratnaweera</a>) </div>
                 </section>
                 <section data-background-image="meadow-3840x2160-4k-hd-wallpaper-field-plant-background-448.jpg">
                     <p class="r-fit-text">We are looking forward to seeing you!</p>
@@ -152,7 +158,7 @@
             // - https://revealjs.com/initialization/
             // - https://revealjs.com/config/
             Reveal.initialize({
-                hash: false,
+                hash: true,
                 transition: 'convex',
                 loop: true,
                 autoSlide: 5000,
