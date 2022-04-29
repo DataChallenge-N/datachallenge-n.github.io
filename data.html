@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="revealjs/dist/reset.css">
+		<link rel="stylesheet" href="revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="revealjs/dist/theme/black.css">
+        <style>
+            .shadow{
+                text-shadow: 2px 2px 2px rgb(146, 143, 143)
+            }
+        </style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="COLOURBOX38208254.jpg">
+
+                    <h2 class="r-fit-text">Roe Deer Movement Analysis</h2>
+
+                    <div style="display: grid; grid-template-columns: 60% 30%;"> 
+                    </div> 
+                  
+                </section>
+
+                <section data-background-image="reh-overview.png">
+                </section>
+
+                <section>
+                    <ul>
+                        <li class="fragment"> > 80'000 data points</li>
+                        <li class="fragment"> 15 individual roe deer</li>
+                        <li class="fragment"> Sampling interval of ≈ 3 Hours</li>
+                        <li class="fragment"> Multiple sequences of ≈ 5 Minutes sampling interval</li>
+                    </ul>
+                </section>
+
+                <section data-background-image="range.png" data-background-size="contain">
+                    <p class = "fragment fade-in-then-out shadow">Sampling period</p>
+
+                </section>
+                <section data-background-image="relations.png" data-background-size="contain">
+                    <p class = "fragment fade-in-then-out shadow">Spatial overlaps</p>
+                </section>
+
+                <section data-background-image="pot-meet.png" data-background-size="cover">
+                    <p class = "fragment fade-in-then-out shadow">Spatial overlaps</p>
+                </section>
+                <section>
+                    Potential questions
+                    <ul>
+                        <li class="fragment"> Animal interactions: Flocking, lead & follow</li>
+                        <li class="fragment"> Movement patterns based on context data (temperature, landuse, season, time of day)</li>
+                        <li class="fragment"> Detecting resting sites, feeding areas...</li>
+                        <li class="fragment"> Interpolation of 3h data based on 5 Minutes samples</li>
+                     
+                    </ul>
+                </section>
+
+               
+			</div>
+		</div>
+
+		<script src="revealjs/dist/reveal.js"></script>
+		<script src="revealjs/plugin/notes/notes.js"></script>
+		<script src="revealjs/plugin/markdown/markdown.js"></script>
+		<script src="revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
